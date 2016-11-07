@@ -1,11 +1,16 @@
-package com.luisa.algorithms;
+package com.luisa.problems;
+
+import com.luisa.problems.util.Util;
 
 public class BiggerIsGreater {
 
 	public static void main(String[] args) {
-		String word = "dkhc";
-		char[] array = word.toCharArray();
-		nextPermutation(array);
+		String[] words = Util.readSTDIN();
+		for (int i = 0; i < words.length; i++) {
+			char[] array = words[i].toCharArray();
+			nextPermutation(array);
+		}
+
 	}
 
 	public static void nextPermutation(char[] array) {
